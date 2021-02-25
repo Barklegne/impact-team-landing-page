@@ -1,13 +1,53 @@
-/* body {
+/*
+=============== 
+VARIABLES
+===============
+*/
+
+*,
+*::after,
+*::before {
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-		sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	padding: 0;
+	box-sizing: inherit;
 }
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
-} */
+html {
+	/* 1 rem = 10px; 10px/16px = 62.5% */
+	font-size: 62.5%;
+	font-family: 'Roboto', sans-serif;
+}
+
+:root {
+	/* COLORS */
+	/* usage ==> color: var(--color-primary); */
+	/* primary colors */
+
+	--color-primary: #00c1ff;
+	--color-primary-light: #eee;
+	--color-primary-dark: #eee;
+
+	--color-secondary: #eee;
+	--color-secondary-light: #eee;
+	--color-secondary-dark: #eee;
+
+	--color-grey-dark: #777;
+	--color-grey-dark-2: #999;
+	--color-grey-dark-3: #333;
+	--color-white: #fff;
+	--color-black: #000;
+
+	/* TYPOGRAPHY */
+	--default-font-size: 1.6rem;
+}
+/* TYPOGRAPHY */
+/* anything related to text like heading, texts font related h1-h6, p, */
+
+/* DIMENSIONS | UTILS  AKA GUTTERS*/
+/* Related to padding, margins */
+
+/* OTHER GLOBAL STYLES */
+/* Classes shared globally over the application */
+.bg {
+	background-color: yellow;
+}
