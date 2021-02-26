@@ -16,12 +16,15 @@ html {
 	/* 1 rem = 10px; 10px/16px = 62.5% */
 	font-size: 62.5%;
 	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	letter-spacing: 2px;
+	scroll-behavior: smooth;
 }
 
-code {
+/* code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
-}
+} */
 
 :root {
 	/* COLORS */
@@ -32,9 +35,9 @@ code {
 	--color-primary-light: #eee;
 	--color-primary-dark: #eee;
 
-	--color-secondary: #eee;
-	--color-secondary-light: #eee;
-	--color-secondary-dark: #eee;
+	--color-secondary: #ff8c00;
+	--color-secondary-light: #f09f3b;
+	--color-secondary-dark: #c07821;
 
 	--color-grey-dark: #777;
 	--color-grey-dark-2: #999;
@@ -42,17 +45,95 @@ code {
 	--color-white: #fff;
 	--color-black: #000;
 
+	--color-black-dark-1: #333232;
+
 	/* TYPOGRAPHY */
 	--default-font-size: 1.6rem;
+
+	/* TYPOGRAPHY */
+	/* anything related to text like heading, texts font related h1-h6, p, */
+
+	/* DIMENSIONS | UTILS  AKA GUTTERS*/
+	/* Related to padding, margins */
+	--gutter-sm: 3rem;
+
+	/* OTHER GLOBAL STYLES */
+	/* Classes shared globally over the application */
+
+	/* ANIMATION DURATIONS */
+	--fast: 0.5s;
+	--normal: 0.75s;
+	--late: 1s;
 }
-/* TYPOGRAPHY */
-/* anything related to text like heading, texts font related h1-h6, p, */
 
-/* DIMENSIONS | UTILS  AKA GUTTERS*/
-/* Related to padding, margins */
+.margin-right-sm {
+	margin-left: var(--gutter-sm);
+}
 
-/* OTHER GLOBAL STYLES */
-/* Classes shared globally over the application */
-.bg {
-	background-color: yellow;
+/* COMPONENTS */
+.btn {
+	padding: 1.5rem 0;
+	width: 15rem;
+	border-radius: 0.5rem;
+	border: none;
+	color: var(--color-white);
+	letter-spacing: inherit;
+	background-color: var(--color-primary);
+	box-shadow: 0px 8px 15px rgba(29, 29, 29, 0.3);
+	transition: all 0.3s ease 0s;
+	text-transform: uppercase;
+	cursor: pointer;
+	outline: none;
+}
+
+.btn:hover {
+	background-color: var(--color-secondary);
+	box-shadow: 0px 15px 20px rgba(247, 100, 32, 0.4);
+	color: #fff;
+	transform: translateY(-7px);
+}
+.btn.secondary {
+	background-color: var(--color-secondary);
+}
+
+.btn.dark {
+	background-color: var(--color-secondary-dark);
+}
+
+.animated-normal {
+	animation: movieInBottom 0.5s ease-out var(--normal);
+	animation-fill-mode: backwards;
+}
+
+.animated-late {
+	animation: movieInBottom 0.5s ease-out var(--late);
+	animation-fill-mode: backwards;
+}
+.animated-left-normal {
+	animation: movieInLeft 0.5s ease-out var(--fast);
+	animation-fill-mode: backwards;
+}
+
+@keyframes movieInBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes movieInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
 }
