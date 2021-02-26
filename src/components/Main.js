@@ -6,8 +6,8 @@ function Main() {
 	return (
 		<Wrapper>
 			<main className='hero-box'>
-				<div className='hero-text animated-left-normal'>
-					<p className='slogan'> --- STUDYING SIMPLIFIED</p>
+				<div className='hero-text animated-left-fast'>
+					<p className='slogan animated-top-late'> --- STUDYING SIMPLIFIED</p>
 					<h2 className='title '>Temehert Educational Platform</h2>
 					<p className='short-description'>
 						A higher academic excellence through our new technologies
@@ -21,14 +21,14 @@ function Main() {
 						</button>
 					</div>
 				</div>
-				<div className='hero-image'>
+				<div className='hero-image animated-bottom-fast'>
 					<img src={mainImg} alt='main' className='img' />
 					<p className='carousel-legend'>
 						Prepare for your national exam online
 					</p>
 				</div>
 			</main>
-			<section className='features'>Features Section</section>
+			{/* <section className='features'>Features Section</section> */}
 		</Wrapper>
 	);
 }

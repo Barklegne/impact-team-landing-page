@@ -4,7 +4,7 @@ import logo from '../assets/images/logo.svg';
 
 function Header() {
 	return (
-		<Wrapper>
+		<Wrapper className='animated-top-fast'>
 			<div className='logo-box'>
 				<img src={logo} alt='logo' className='logo' />
 				<h3 className='company'>IMPACT TEAM</h3>
