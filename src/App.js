@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { FaTelegram, FaFacebook } from 'react-icons/fa';
-import { RiInstagramFill } from 'react-icons/ri';
+// import { FaTelegram, FaFacebook } from 'react-icons/fa';
+// import { RiInstagramFill } from 'react-icons/ri';
 
 import Header from './components/Header';
 import Main from './components/Main';
