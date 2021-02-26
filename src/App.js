@@ -5,6 +5,7 @@ import { RiInstagramFill } from 'react-icons/ri';
 import Header from './components/Header';
 import Main from './components/Main';
 import { useEffect, useState } from 'react';
+import Loading from './components/Loading';
 
 function App() {
 	const [loading, setLoading] = useState(true);
@@ -14,7 +15,7 @@ function App() {
 		}, 1000);
 	}, [loading]);
 
-	if (loading) return <h2>Loading...</h2>;
+	if (loading) return <Loading />;
 	else
 		return (
 			<AppWrapper>

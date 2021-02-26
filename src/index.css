@@ -33,7 +33,7 @@ html {
 
 	--color-primary: #00c1ff;
 	--color-primary-light: #eee;
-	--color-primary-dark: #eee;
+	--color-primary-dark: #086f91;
 
 	--color-secondary: #ff8c00;
 	--color-secondary-light: #f09f3b;
@@ -174,4 +174,26 @@ html {
 		opacity: 1;
 		transform: translate(0);
 	}
+}
+
+@keyframes spinner {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.section-center {
+	width: 90vw;
+	margin: 45vh auto;
+}
+
+.loading {
+	width: 6rem;
+	height: 6rem;
+	margin: 0 auto;
+	margin-top: 10rem;
+	border-radius: 50%;
+	border: 2px solid var(--color-primary);
+	border-top-color: var(--color-secondary);
+	animation: spinner 0.9s linear infinite;
 }
