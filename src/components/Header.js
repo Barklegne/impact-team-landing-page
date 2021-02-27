@@ -11,10 +11,10 @@ function Header() {
 			</div>
 			<nav className='nav-box'>
 				<ul className='nav-list'>
-					<li className='list-item'>Home</li>
-					<li className='list-item'>Downloads</li>
-					<li className='list-item'>Contact Us</li>
-					<li className='list-item'>SignIn</li>
+					<li className='list-item'>HOME</li>
+					<li className='list-item'>FEATURES</li>
+					<li className='list-item'>CONTACT US</li>
+					<li className='list-item'>SIGN IN</li>
 				</ul>
 			</nav>
 		</Wrapper>
@@ -54,19 +54,20 @@ const Wrapper = styled.header`
 	}
 	.list-item {
 		color: var(--color-black-dark-1);
-		font-weight: 400;
+		/* font-weight: 300; */
 		margin-right: 6rem;
-
+		font-family: 'Barlow Condensed', sans-serif;
+		font-weight: 600;
 		align-self: stretch;
 		cursor: pointer;
 		padding-bottom: 10px;
-		border-bottom: 2px solid transparent;
+		border-bottom: 1.5px solid transparent;
 
 		:hover {
 			/* font-weight: 500; */
 			color: var(--color-secondary);
 
-			border-bottom: 2px solid var(--color-primary);
+			border-bottom: 1.5px solid var(--color-primary);
 			transition: all 0.8s;
 		}
 	}

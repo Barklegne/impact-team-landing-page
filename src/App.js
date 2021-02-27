@@ -20,7 +20,6 @@ function App() {
 		return (
 			<AppWrapper>
 				<Header />
-
 				<Main />
 			</AppWrapper>
 		);

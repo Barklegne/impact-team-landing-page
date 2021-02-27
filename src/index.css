@@ -16,9 +16,11 @@ html {
 	/* 1 rem = 10px; 10px/16px = 62.5% */
 	font-size: 62.5%;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	letter-spacing: 2px;
+
+	font-weight: 400;
+	letter-spacing: 2.5px;
 	scroll-behavior: smooth;
+	color: var(--color-black);
 }
 
 /* code {
@@ -43,7 +45,7 @@ html {
 	--color-grey-dark-2: #999;
 	--color-grey-dark-3: #333;
 	--color-white: #fff;
-	--color-black: #000;
+	--color-black: #222a35;
 
 	--color-black-dark-1: #333232;
 
@@ -65,6 +67,7 @@ html {
 	--normal: 0.75s;
 	--medium: 1s;
 	--late: 1.3s;
+	--very-late: 1.5s;
 }
 
 .margin-right-sm {
@@ -87,6 +90,8 @@ html {
 	outline: none;
 }
 
+/* ANIMATION CLASSES */
+
 .btn:hover {
 	background-color: var(--color-secondary);
 	box-shadow: 0px 15px 20px rgba(247, 100, 32, 0.4);
@@ -101,13 +106,13 @@ html {
 	background-color: var(--color-secondary-dark);
 }
 
-.animated-normal {
-	animation: movieInBottom 0.5s ease-out var(--normal);
+.animated-late {
+	animation: movieInBottom 0.5s ease-out var(--late);
 	animation-fill-mode: backwards;
 }
 
-.animated-late {
-	animation: movieInBottom 0.5s ease-out var(--late);
+.animated-very-late {
+	animation: movieInBottom 0.5s ease-out var(--very-late);
 	animation-fill-mode: backwards;
 }
 .animated-top-fast {
@@ -128,6 +133,7 @@ html {
 	animation-fill-mode: backwards;
 }
 
+/* ANIMATIONS KEYFRAMES*/
 @keyframes movieInBottom {
 	0% {
 		opacity: 0;
@@ -194,6 +200,6 @@ html {
 	margin-top: 10rem;
 	border-radius: 50%;
 	border: 2px solid var(--color-primary);
-	border-top-color: var(--color-secondary);
+	border-top-color: var(--color-white);
 	animation: spinner 0.9s linear infinite;
 }
