@@ -5,8 +5,30 @@ import girlStudying from '../assets/images/book_reading_girl_bright.svg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { FaBookReader } from 'react-icons/fa';
+import Typical from 'react-typical';
 
 function Main() {
+	const steps = [
+		'Welcome 👋',
+		2000,
+		'This is Impact Team Educational Platform',
+		3000,
+		'Helping you towards your higher level achievement 🎓 ',
+		1000,
+		'Prepare for your exams where ever you are 🖊',
+		1000,
+		'Imagine having a library in your home...📖',
+		1000,
+		'In your pocket',
+		1000,
+		'Every where you go 👌',
+		3000,
+		'No more carrying books',
+		2000,
+		'Install me now',
+		1000
+	];
+
 	useEffect(() => {
 		Aos.init({ duration: 2000 });
 	}, []);
@@ -26,8 +48,12 @@ function Main() {
 						Educational Platform
 					</h2>
 					<p className='short-description'>
-						A higher academic excellence through our new technologies on your
-						phone, on your computer
+						<Typical
+							wrapper='span'
+							steps={steps}
+							loop={10}
+							// className='legend'
+						/>
 					</p>
 					<div className='cta'>
 						<button className='btn animated-late'>Signup</button>
@@ -38,9 +64,6 @@ function Main() {
 				</div>
 				<div className='hero-image' data-aos='fade-down'>
 					<img src={girlStudying} alt='main' className='img' />
-					<p className='carousel-legend animated-very-late'>
-						Prepare for your national exam online
-					</p>
 				</div>
 			</main>
 			{/* <section className='features'>Features Section</section> */}
@@ -99,6 +122,7 @@ const Wrapper = styled.div`
 	.short-description {
 		font-size: inherit;
 		margin-top: 3rem;
+		font-weight: 400;
 	}
 
 	.cta {
@@ -125,6 +149,10 @@ const Wrapper = styled.div`
 		/* background-color: green; */
 
 		margin-top: 2rem;
+	}
+
+	.legend {
+		font-weight: 400;
 	}
 `;
 export default Main;
