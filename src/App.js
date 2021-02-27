@@ -26,7 +26,7 @@ function App() {
 }
 const AppWrapper = styled.div`
 	/* * the app takes 97% of the screen width */
-	max-width: 97vw;
+	max-width: 140rem;
 	padding: 0 6rem;
 	font-size: var(--default-font-size);
 
@@ -37,6 +37,6 @@ const AppWrapper = styled.div`
 	/* //TODO: lines below temporary codes, needs to be removed */
 	min-height: 100vh;
 	/* background-color: whitesmoke; */
-	box-shadow: 0 2rem 6rem rgba(0, 0, 0, 1);
+	box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.08);
 `;
 export default App;

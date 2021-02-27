@@ -9,23 +9,15 @@ import Typical from 'react-typical';
 
 function Main() {
 	const steps = [
-		'Welcome 👋',
-		2000,
-		'This is Impact Team Educational Platform',
-		3000,
 		'Helping you towards your higher level achievement 🎓 ',
-		1000,
-		'Prepare for your exams where ever you are 🖊',
-		1000,
-		'Imagine having a library in your home...📖',
-		1000,
-		'In your pocket',
-		1000,
-		'Every where you go 👌',
 		3000,
-		'No more carrying books',
+		'Prepare for your exams wherever you are 🖊',
+		1000,
+		'Everywhere you go 👌',
+		3000,
+		'No more carrying books 📚',
 		2000,
-		'Install me now',
+		'👇Downloads for Android,IOS and PC👇',
 		1000
 	];
 
@@ -51,7 +43,7 @@ function Main() {
 						<Typical
 							wrapper='span'
 							steps={steps}
-							loop={10}
+							loop={1}
 							// className='legend'
 						/>
 					</p>
