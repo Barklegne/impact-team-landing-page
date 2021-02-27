@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import mainImg from '../assets/images/study.png';
+// import mainImg from '../assets/images/study.png';
 import girlStudying from '../assets/images/book_reading_girl_bright.svg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
