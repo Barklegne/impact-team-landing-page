@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { FaFacebookF } from 'react-icons/fa';
 import { FiPhoneCall } from 'react-icons/fi';
-import { FaTelegram, FaInstagram } from 'react-icons/fa';
-
+import { FaTelegram } from 'react-icons/fa';
+// FaInstagram
 const Card = () => {
 	return (
 		<Wrapper>
