@@ -7,6 +7,7 @@ import Main from './components/Main';
 import { useEffect, useState } from 'react';
 import Loading from './components/Loading';
 import AnimatedCursor from 'react-animated-cursor';
+import Particle from './components/Particles';
 
 function App() {
 	const [loading, setLoading] = useState(true);
@@ -19,11 +20,23 @@ function App() {
 	if (loading) return <Loading />;
 	else
 		return (
-			<AppWrapper>
+			<>
+				<Particle />
 				<AnimatedCursor color='64, 185, 234 ' />
-				<Header />
-				<Main />
-			</AppWrapper>
+				<div
+					style={{
+						position: 'absolute',
+						top: 0,
+						left: 0,
+						width: '100%',
+						height: '100vh'
+					}}>
+					<AppWrapper>
+						<Header />
+						<Main />
+					</AppWrapper>
+				</div>
+			</>
 		);
 }
 const AppWrapper = styled.div`

@@ -68,7 +68,7 @@ function Main() {
 }
 
 const Wrapper = styled.div`
-	background-color: #fff;
+	/* background-color: #fff; */
 	flex: 1;
 
 	display: flex;
