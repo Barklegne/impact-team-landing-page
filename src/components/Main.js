@@ -5,7 +5,9 @@ import girlStudying from '../assets/images/book_reading_girl_bright.svg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { FaBookReader } from 'react-icons/fa';
+
 import Typical from 'react-typical';
+import Card from './Card';
 
 function Main() {
 	const steps = [
@@ -49,7 +51,7 @@ function Main() {
 					</p>
 					<div className='cta'>
 						<button className='btn animated-late'>Signup</button>
-						<button className='btn secondary animated-very-late margin-right-sm '>
+						<button className='btn  animated-very-late margin-right-sm '>
 							Watch Demo
 						</button>
 					</div>
@@ -58,7 +60,9 @@ function Main() {
 					<img src={girlStudying} alt='main' className='img' />
 				</div>
 			</main>
-			{/* <section className='features'>Features Section</section> */}
+			<section className='features'>
+				<Card />
+			</section>
 		</Wrapper>
 	);
 }
@@ -80,7 +84,7 @@ const Wrapper = styled.div`
 		/* background-color: red; */
 	}
 	.features {
-		background-color: bisque;
+		/* background-color: bisque; */
 
 		flex: 1;
 	}
